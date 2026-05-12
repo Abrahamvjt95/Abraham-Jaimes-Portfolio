@@ -18,7 +18,7 @@ export const pt = {
     label: 'Sobre mim',
     heading: 'Quem sou',
     paragraph:
-      'Desenvolvedor Full Stack com mais de 7 anos de experiência a construir aplicações empresariais em todo o stack. A minha especialidade principal é Angular — entregando interfaces escaláveis e baseadas em componentes — combinada com sólido trabalho de backend em Node.js e Java/Spring Boot, e deploys reais em AWS. Contribuí para produtos em seguros, saúde, software industrial (Siemens) e utilities. Atualmente disponível e aberto a novas oportunidades a tempo inteiro na Europa.',
+      'Desenvolvedor Full Stack com mais de 7 anos de experiência a construir aplicações empresariais em todo o stack. A minha especialidade principal é Angular — entregando interfaces escaláveis e baseadas em componentes — combinada com sólido trabalho de backend em Node.js e Java/Spring Boot, e deploys reais em AWS. Contribuí para produtos em seguros, saúde, software industrial (Siemens) e utilities. Atualmente disponível e aberto a novas oportunidades a tempo inteiro na Europa. Falo espanhol como língua materna, assim como inglês (C1), português (B1) e italiano (B1).',
     tags: ['Disponível Remoto', 'Baseado na Europa', 'Angular First', 'Full Stack', 'Apps Enterprise'],
     highlights: [
       { value: '7+', label: 'Anos de Experiência' },
@@ -123,7 +123,14 @@ export const pt = {
       linkedin: 'LinkedIn',
       location: 'Localização',
       locationValue: 'Carcavelos, Portugal · Disponível remotamente',
+      languages: 'Idiomas',
     },
+    languages: [
+      { name: 'Espanhol', level: 'Nativo' },
+      { name: 'Inglês', level: 'C1' },
+      { name: 'Português', level: 'B1' },
+      { name: 'Italiano', level: 'B1' },
+    ],
   },
   footer: { builtWith: 'Desenvolvido com Angular 21' },
 };

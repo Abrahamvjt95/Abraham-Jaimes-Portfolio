@@ -18,7 +18,7 @@ export const en = {
     label: 'About Me',
     heading: 'Who I Am',
     paragraph:
-      "Full Stack Developer with 7+ years of experience building enterprise-grade applications across the full stack. My core expertise is Angular — delivering scalable, component-driven UIs — combined with solid backend work in Node.js and Java/Spring Boot, and real cloud deployments on AWS. I've contributed to products in insurance, healthcare, industrial software (Siemens), and utilities. Currently available and open to new full-time opportunities across Europe.",
+      "Full Stack Developer with 7+ years of experience building enterprise-grade applications across the full stack. My core expertise is Angular — delivering scalable, component-driven UIs — combined with solid backend work in Node.js and Java/Spring Boot, and real cloud deployments on AWS. I've contributed to products in insurance, healthcare, industrial software (Siemens), and utilities. Currently available and open to new full-time opportunities across Europe. I speak Spanish natively, along with English (C1), Portuguese (B1) and Italian (B1).",
     tags: ['Open to Remote', 'Europe-based', 'Angular First', 'Full Stack', 'Enterprise Apps'],
     highlights: [
       { value: '7+', label: 'Years of Experience' },
@@ -123,7 +123,14 @@ export const en = {
       linkedin: 'LinkedIn',
       location: 'Location',
       locationValue: 'Carcavelos, Portugal · Remote-ready',
+      languages: 'Languages',
     },
+    languages: [
+      { name: 'Spanish', level: 'Native' },
+      { name: 'English', level: 'C1' },
+      { name: 'Portuguese', level: 'B1' },
+      { name: 'Italian', level: 'B1' },
+    ],
   },
   footer: { builtWith: 'Built with Angular 21' },
 };

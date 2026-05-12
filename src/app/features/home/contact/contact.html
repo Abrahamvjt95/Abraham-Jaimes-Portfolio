@@ -43,6 +43,20 @@
               <span class="contact__link-value">{{ i18n.t().contact.labels.locationValue }}</span>
             </div>
           </div>
+
+          <div class="contact__link contact__link--static">
+            <div class="contact__link-icon">AB</div>
+            <div class="contact__link-body">
+              <span class="contact__link-label">{{ i18n.t().contact.labels.languages }}</span>
+              <div class="contact__lang-list">
+                @for (lang of i18n.t().contact.languages; track lang.name) {
+                  <span class="contact__lang-badge">
+                    {{ lang.name }}&nbsp;<span class="contact__lang-level">{{ lang.level }}</span>
+                  </span>
+                }
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="contact__actions">

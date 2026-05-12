@@ -109,6 +109,28 @@
     word-break: break-all;
   }
 
+  &__lang-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-2;
+    padding-top: $space-1;
+  }
+
+  &__lang-badge {
+    font-size: 0.75rem;
+    color: $text-secondary;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid $border-subtle;
+    border-radius: $radius-sm;
+    padding: 2px $space-2;
+    white-space: nowrap;
+  }
+
+  &__lang-level {
+    color: $accent-primary;
+    font-weight: 600;
+  }
+
   &__actions {
     display: flex;
     gap: $space-3;

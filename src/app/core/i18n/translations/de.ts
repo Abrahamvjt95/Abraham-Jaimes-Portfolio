@@ -18,7 +18,7 @@ export const de = {
     label: 'Über mich',
     heading: 'Wer ich bin',
     paragraph:
-      'Full Stack Entwickler mit über 7 Jahren Erfahrung in der Entwicklung unternehmensweiter Anwendungen. Meine Kernkompetenz ist Angular — skalierbare, komponentenbasierte Benutzeroberflächen — kombiniert mit solider Backend-Arbeit in Node.js und Java/Spring Boot sowie echten Cloud-Deployments auf AWS. Ich habe zu Produkten in den Bereichen Versicherungen, Gesundheitswesen, Industriesoftware (Siemens) und Versorgungsunternehmen beigetragen. Derzeit verfügbar und offen für neue Vollzeitstellen in Europa.',
+      'Full Stack Entwickler mit über 7 Jahren Erfahrung in der Entwicklung unternehmensweiter Anwendungen. Meine Kernkompetenz ist Angular — skalierbare, komponentenbasierte Benutzeroberflächen — kombiniert mit solider Backend-Arbeit in Node.js und Java/Spring Boot sowie echten Cloud-Deployments auf AWS. Ich habe zu Produkten in den Bereichen Versicherungen, Gesundheitswesen, Industriesoftware (Siemens) und Versorgungsunternehmen beigetragen. Derzeit verfügbar und offen für neue Vollzeitstellen in Europa. Ich spreche Spanisch als Muttersprache sowie Englisch (C1), Portugiesisch (B1) und Italienisch (B1).',
     tags: ['Remote verfügbar', 'Europa-basiert', 'Angular First', 'Full Stack', 'Enterprise Apps'],
     highlights: [
       { value: '7+', label: 'Jahre Erfahrung' },
@@ -123,7 +123,14 @@ export const de = {
       linkedin: 'LinkedIn',
       location: 'Standort',
       locationValue: 'Carcavelos, Portugal · Remote-bereit',
+      languages: 'Sprachen',
     },
+    languages: [
+      { name: 'Spanisch', level: 'Muttersprache' },
+      { name: 'Englisch', level: 'C1' },
+      { name: 'Portugiesisch', level: 'B1' },
+      { name: 'Italienisch', level: 'B1' },
+    ],
   },
   footer: { builtWith: 'Entwickelt mit Angular 21' },
 };
