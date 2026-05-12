@@ -1,0 +1,62 @@
+<nav class="navbar" [class.scrolled]="scrolled()">
+  <div class="container navbar__inner">
+    <button class="navbar__logo" (click)="scrollTo('#hero')">
+      <span class="gradient-text">AJ</span>
+    </button>
+
+    <ul class="navbar__links" [class.open]="menuOpen()">
+      @for (link of navLinks(); track link.href) {
+        <li>
+          <button class="navbar__link" (click)="scrollTo(link.href)">
+            {{ link.label }}
+          </button>
+        </li>
+      }
+
+      <li>
+        <div class="lang-dropdown" [class.open]="langOpen()">
+          <button class="lang-trigger" (click)="toggleLang($event)">
+            <span class="lang-flag">{{ i18n.currentLangMeta().flag }}</span>
+            <span class="lang-code">{{ i18n.currentLangMeta().label }}</span>
+            <svg class="lang-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none">
+              <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </button>
+
+          <div class="lang-menu" (click)="$event.stopPropagation()">
+            @for (lang of i18n.available; track lang.code) {
+              <button
+                class="lang-option"
+                [class.active]="i18n.currentLang() === lang.code"
+                (click)="selectLang($event, lang.code)"
+              >
+                <span class="lang-option-flag">{{ lang.flag }}</span>
+                <span class="lang-option-name">{{ lang.name }}</span>
+                @if (i18n.currentLang() === lang.code) {
+                  <span class="lang-option-check">✓</span>
+                }
+              </button>
+            }
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <a class="btn-primary navbar__cv-btn" href="assets/files/abraham-jaimes-cv.pdf" download>
+          {{ i18n.t().nav.downloadCv }}
+        </a>
+      </li>
+    </ul>
+
+    <button
+      class="navbar__hamburger"
+      (click)="toggleMenu()"
+      [class.open]="menuOpen()"
+      aria-label="Toggle menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>

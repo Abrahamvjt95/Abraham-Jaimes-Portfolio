@@ -1,0 +1,28 @@
+<section class="skills" id="skills">
+  <div class="container">
+    <app-section-title
+      [label]="i18n.t().skills.label"
+      [heading]="i18n.t().skills.heading"
+      [subheading]="i18n.t().skills.subheading"
+    />
+
+    <div class="skills__grid">
+      @for (group of skillGroups(); track group.category) {
+        <div class="skills__card card">
+          <div class="skills__card-header">
+            <span class="skills__icon">{{ group.icon }}</span>
+            <h3 class="skills__category">{{ group.category }}</h3>
+          </div>
+          <ul class="skills__list">
+            @for (skill of group.skills; track skill) {
+              <li class="skills__item">
+                <span class="skills__dot"></span>
+                {{ skill }}
+              </li>
+            }
+          </ul>
+        </div>
+      }
+    </div>
+  </div>
+</section>

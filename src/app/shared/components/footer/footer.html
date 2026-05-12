@@ -1,0 +1,13 @@
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__left">
+      <span class="footer__logo gradient-text">AJ</span>
+      <p class="footer__copy">© {{ year }} Abraham Jaimes · {{ i18n.t().footer.builtWith }}</p>
+    </div>
+    <div class="footer__links">
+      <a [href]="contact.github" target="_blank" rel="noopener" class="footer__link">GitHub</a>
+      <a [href]="contact.linkedin" target="_blank" rel="noopener" class="footer__link">LinkedIn</a>
+      <a [href]="'mailto:' + contact.email" class="footer__link">Email</a>
+    </div>
+  </div>
+</footer>

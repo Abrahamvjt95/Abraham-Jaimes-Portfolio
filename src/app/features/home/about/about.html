@@ -1,0 +1,26 @@
+<section class="about" id="about">
+  <div class="container">
+    <app-section-title [label]="i18n.t().about.label" [heading]="i18n.t().about.heading" />
+
+    <div class="about__inner">
+      <div class="about__text-block">
+        <p class="about__paragraph">{{ i18n.t().about.paragraph }}</p>
+
+        <div class="about__tags">
+          @for (tag of i18n.t().about.tags; track tag) {
+            <span class="badge" [class.badge-cyan]="$even" [class.badge-blue]="$odd">{{ tag }}</span>
+          }
+        </div>
+      </div>
+
+      <div class="about__highlights">
+        @for (item of i18n.t().about.highlights; track item.label) {
+          <div class="about__highlight-card">
+            <span class="about__highlight-value gradient-text">{{ item.value }}</span>
+            <span class="about__highlight-label">{{ item.label }}</span>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>

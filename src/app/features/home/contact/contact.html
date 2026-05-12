@@ -1,0 +1,59 @@
+<section class="contact" id="contact">
+  <div class="container">
+    <app-section-title
+      [label]="i18n.t().contact.label"
+      [heading]="i18n.t().contact.heading"
+      [subheading]="i18n.t().contact.subheading"
+    />
+
+    <div class="contact__wrapper">
+      <div class="contact__card card">
+        <h3 class="contact__cta">{{ i18n.t().contact.cta }}</h3>
+        <p class="contact__text">{{ i18n.t().contact.text }}</p>
+
+        <div class="contact__links">
+          <a [href]="'mailto:' + contact.email" class="contact__link">
+            <div class="contact__link-icon">✉</div>
+            <div class="contact__link-body">
+              <span class="contact__link-label">{{ i18n.t().contact.labels.email }}</span>
+              <span class="contact__link-value">{{ contact.email }}</span>
+            </div>
+          </a>
+
+          <a [href]="contact.github" target="_blank" rel="noopener" class="contact__link">
+            <div class="contact__link-icon">GH</div>
+            <div class="contact__link-body">
+              <span class="contact__link-label">{{ i18n.t().contact.labels.github }}</span>
+              <span class="contact__link-value">github.com/abrahamjaimes</span>
+            </div>
+          </a>
+
+          <a [href]="contact.linkedin" target="_blank" rel="noopener" class="contact__link">
+            <div class="contact__link-icon">in</div>
+            <div class="contact__link-body">
+              <span class="contact__link-label">{{ i18n.t().contact.labels.linkedin }}</span>
+              <span class="contact__link-value">linkedin.com/in/abrahamjaimes</span>
+            </div>
+          </a>
+
+          <div class="contact__link contact__link--static">
+            <div class="contact__link-icon">◎</div>
+            <div class="contact__link-body">
+              <span class="contact__link-label">{{ i18n.t().contact.labels.location }}</span>
+              <span class="contact__link-value">{{ i18n.t().contact.labels.locationValue }}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__actions">
+          <a [href]="'mailto:' + contact.email" class="btn-primary">
+            {{ i18n.t().contact.sendEmail }}
+          </a>
+          <a href="assets/files/abraham-jaimes-cv.pdf" download class="btn-outline">
+            {{ i18n.t().contact.downloadCv }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

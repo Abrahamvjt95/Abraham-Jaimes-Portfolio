@@ -1,0 +1,67 @@
+<section class="hero" id="hero">
+  <div class="hero__bg-grid"></div>
+  <div class="hero__glow"></div>
+
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <span class="hero__badge">
+        <span class="hero__badge-dot"></span>
+        {{ i18n.t().hero.badge }}
+      </span>
+
+      <h1 class="hero__name">
+        Hi, I'm <span class="gradient-text">{{ hero.name }}</span>
+      </h1>
+
+      <h2 class="hero__title">{{ hero.title }}</h2>
+      <p class="hero__stack">{{ hero.stack }}</p>
+      <p class="hero__subtitle">{{ i18n.t().hero.subtitle }}</p>
+
+      <div class="hero__actions">
+        <a href="#projects" class="btn-primary" (click)="scrollTo($event, '#projects')">
+          {{ i18n.t().hero.viewProjects }}
+        </a>
+        <a href="assets/files/abraham-jaimes-cv.pdf" download class="btn-outline">
+          {{ i18n.t().hero.downloadCv }}
+        </a>
+        <a href="#contact" class="btn-outline" (click)="scrollTo($event, '#contact')">
+          {{ i18n.t().hero.contactMe }}
+        </a>
+      </div>
+
+      <div class="hero__socials">
+        <a [href]="contact.github" target="_blank" rel="noopener" class="hero__social-link">GitHub</a>
+        <span class="hero__social-sep">·</span>
+        <a [href]="contact.linkedin" target="_blank" rel="noopener" class="hero__social-link">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="hero__visual">
+      <div class="hero__avatar-ring">
+        <div class="hero__avatar">
+          <img
+            src="assets/images/avatar.jpeg"
+            alt="Abraham Jaimes"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+          />
+          <div class="hero__avatar-fallback">AJ</div>
+        </div>
+      </div>
+
+      <div class="hero__float-card hero__float-card--1">
+        <span class="hero__float-icon">⬡</span>
+        <span>Angular Expert</span>
+      </div>
+      <div class="hero__float-card hero__float-card--2">
+        <span class="hero__float-icon">☁</span>
+        <span>AWS · Node.js · Java</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__scroll">
+    <div class="hero__scroll-mouse">
+      <div class="hero__scroll-dot"></div>
+    </div>
+  </div>
+</section>

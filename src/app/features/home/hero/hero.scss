@@ -1,0 +1,277 @@
+@use 'styles/variables' as *;
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 120px 0 $space-20;
+
+  &__bg-grid {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(0, 212, 255, 0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 212, 255, 0.025) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
+    pointer-events: none;
+  }
+
+  &__glow {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(0, 212, 255, 0.05) 0%, transparent 65%);
+    pointer-events: none;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: $space-12;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+    @media (min-width: $bp-lg) {
+      flex-direction: row;
+      gap: $space-16;
+      align-items: center;
+    }
+  }
+
+  &__content {
+    flex: 1;
+    text-align: center;
+
+    @media (min-width: $bp-lg) {
+      text-align: left;
+    }
+  }
+
+  &__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-2;
+    background: rgba(0, 212, 255, 0.07);
+    border: 1px solid rgba(0, 212, 255, 0.18);
+    color: $accent-primary;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: $space-2 $space-4;
+    border-radius: $radius-full;
+    margin-bottom: $space-6;
+    letter-spacing: 0.02em;
+  }
+
+  &__badge-dot {
+    width: 7px;
+    height: 7px;
+    background: $accent-primary;
+    border-radius: 50%;
+    animation: pulse-glow 2s ease-in-out infinite;
+    flex-shrink: 0;
+  }
+
+  &__name {
+    font-size: clamp(2.4rem, 6vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin-bottom: $space-3;
+    color: $text-primary;
+  }
+
+  &__title {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-weight: 700;
+    color: $text-secondary;
+    margin-bottom: $space-2;
+    letter-spacing: -0.02em;
+  }
+
+  &__stack {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: $accent-primary;
+    letter-spacing: 0.06em;
+    margin-bottom: $space-6;
+    opacity: 0.85;
+  }
+
+  &__subtitle {
+    font-size: 1.05rem;
+    color: $text-secondary;
+    line-height: 1.75;
+    max-width: 520px;
+    margin: 0 auto $space-8;
+
+    @media (min-width: $bp-lg) {
+      margin: 0 0 $space-8;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-3;
+    justify-content: center;
+    margin-bottom: $space-8;
+
+    @media (min-width: $bp-lg) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: $space-3;
+    justify-content: center;
+
+    @media (min-width: $bp-lg) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__social-link {
+    font-size: 0.875rem;
+    color: $text-muted;
+    font-weight: 500;
+    transition: color $transition-fast;
+
+    &:hover {
+      color: $accent-primary;
+    }
+  }
+
+  &__social-sep {
+    color: $text-muted;
+    opacity: 0.4;
+  }
+
+  &__visual {
+    position: relative;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 280px;
+
+    @media (min-width: $bp-lg) {
+      width: 360px;
+      height: 360px;
+    }
+  }
+
+  &__avatar-ring {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    padding: 3px;
+    background: $accent-gradient;
+    animation: float 6s ease-in-out infinite;
+
+    @media (min-width: $bp-lg) {
+      width: 310px;
+      height: 310px;
+    }
+  }
+
+  &__avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    background: $bg-card;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+    }
+  }
+
+  &__avatar-fallback {
+    display: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: $accent-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  &__float-card {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: $space-2;
+    background: $bg-card;
+    border: 1px solid $border-subtle;
+    padding: $space-2 $space-4;
+    border-radius: $radius-md;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: $text-primary;
+    white-space: nowrap;
+    box-shadow: $shadow-card;
+
+    &--1 {
+      top: 10px;
+      right: -15px;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    &--2 {
+      bottom: 30px;
+      left: -15px;
+      animation: float 5s ease-in-out infinite 1.2s;
+    }
+  }
+
+  &__float-icon {
+    color: $accent-primary;
+    font-size: 1rem;
+  }
+
+  &__scroll {
+    position: absolute;
+    bottom: $space-8;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+  }
+
+  &__scroll-mouse {
+    width: 24px;
+    height: 40px;
+    border: 2px solid $border-accent;
+    border-radius: $radius-full;
+    position: relative;
+    opacity: 0.6;
+  }
+
+  &__scroll-dot {
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    width: 4px;
+    height: 8px;
+    background: $accent-primary;
+    border-radius: $radius-full;
+    animation: scroll-dot 1.8s ease-in-out infinite;
+  }
+}
