@@ -65,6 +65,6 @@ export const PROJECTS_STRUCTURE = [
 export const CONTACT_DATA: ContactInfo = {
   email: 'abrahamjaimesdev@gmail.com',
   github: 'https://github.com/Abrahamvjt95',
-  linkedin: 'https://linkedin.com/in/abrahamjaimes',
+  linkedin: 'https://www.linkedin.com/in/abrahamjaimesdev/',
   location: 'Carcavelos, Portugal',
 };
