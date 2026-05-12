@@ -28,9 +28,6 @@ export class I18nService {
   private detectLang(): Language {
     const saved = localStorage.getItem('portfolio-lang') as Language;
     if (saved && ['en', 'es', 'pt', 'it', 'de'].includes(saved)) return saved;
-
-    const browser = navigator.language.slice(0, 2).toLowerCase();
-    const map: Record<string, Language> = { en: 'en', es: 'es', pt: 'pt', it: 'it', de: 'de' };
-    return map[browser] ?? 'en';
+    return 'en';
   }
 }
