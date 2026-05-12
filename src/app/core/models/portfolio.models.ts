@@ -22,6 +22,7 @@ export interface Project {
   featured?: boolean;
   githubUrl?: string;
   demoUrl?: string;
+  demoCredentials?: { user: string; password: string };
 }
 
 export interface ContactInfo {

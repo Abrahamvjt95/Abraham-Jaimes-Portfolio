@@ -50,20 +50,21 @@ export const PROJECTS_STRUCTURE = [
     featured: true,
     demoUrl: 'https://billing-dashboard-frontend-zeta.vercel.app',
     githubUrl: 'https://github.com/Abrahamvjt95/billing-dashboard-frontend',
+    demoCredentials: { user: 'demo@billflow.com', password: 'demo1234' },
   },
   {
-    stack: ['React', 'Node.js', 'Express', 'MongoDB', 'AWS', 'JWT'],
-    status: 'live' as const,
+    stack: ['Node.js', 'Express', 'MongoDB', 'Mongoose', 'JWT', 'Jest', 'Supertest', 'Railway'],
+    status: 'in-progress' as const,
   },
   {
-    stack: ['Angular', 'TypeScript', 'AWS Lambda', 'OpenSearch', 'Node.js'],
-    status: 'coming-soon' as const,
+    stack: ['Angular', 'AWS Lambda', 'API Gateway', 'S3', 'OpenSearch', 'Python'],
+    status: 'in-progress' as const,
   },
 ];
 
 export const CONTACT_DATA: ContactInfo = {
   email: 'abrahamjaimesdev@gmail.com',
-  github: 'https://github.com/abrahamjaimes',
+  github: 'https://github.com/Abrahamvjt95',
   linkedin: 'https://linkedin.com/in/abrahamjaimes',
   location: 'Carcavelos, Portugal',
 };

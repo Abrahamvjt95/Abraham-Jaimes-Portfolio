@@ -88,6 +88,9 @@ export const es = {
     moreProjects: 'Más proyectos en GitHub',
     caseStudy: 'Caso de estudio próximamente',
     liveDemo: 'Demo en vivo',
+    demoAccess: 'Acceso demo',
+    demoUser: 'Usuario',
+    demoPassword: 'Contraseña',
     items: [
       {
         title: 'Billing Dashboard',
@@ -95,14 +98,14 @@ export const es = {
           'Sistema de facturación SaaS construido desde cero. Frontend Angular 21 con Signals y OnPush, API REST Spring Boot 3 con auth JWT, PostgreSQL + Flyway y pipeline CI/CD. Desplegado en Vercel + Railway. Cuenta demo disponible.',
       },
       {
-        title: 'Plataforma de Gestión Clínica',
+        title: 'DevTrack API',
         description:
-          'Plataforma web full-stack construida desde cero para Clínica Ana Cecilia. Control contable, programación de citas médicas y sistema de colas de laboratorio en tiempo real con despliegue en AWS.',
+          'API REST de seguimiento de incidencias construida con Node.js, Express y MongoDB. Autenticación JWT, control de acceso por roles, CRUD completo para proyectos y tickets, y suite de tests con Jest y Supertest. Desplegada en Railway.',
       },
       {
-        title: 'Modernización Web Empresarial',
+        title: 'Lambda Search Service',
         description:
-          'Modernización de aplicación web a gran escala para Siemens. Frontend Angular 13–16, backend serverless en AWS con Lambda e integración de OpenSearch, actualizaciones de versión y optimización de rendimiento.',
+          'Servicio de búsqueda de documentos serverless en AWS. Funciones Lambda en Python detrás de API Gateway indexan archivos subidos a S3 en Amazon OpenSearch. Frontend Angular para búsqueda full-text en tiempo real con filtros.',
       },
     ],
   },
