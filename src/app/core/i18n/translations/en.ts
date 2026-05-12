@@ -18,7 +18,7 @@ export const en = {
     label: 'About Me',
     heading: 'Who I Am',
     paragraph:
-      "Full Stack Developer with 7+ years of experience building enterprise-grade applications across the full stack. My core expertise is Angular — delivering scalable, component-driven UIs — combined with solid backend work in Node.js and Java/Spring Boot, and real cloud deployments on AWS. I've contributed to products in insurance, healthcare, industrial software (Siemens), and utilities. Currently at CGI in Lisbon, open to new opportunities across Europe.",
+      "Full Stack Developer with 7+ years of experience building enterprise-grade applications across the full stack. My core expertise is Angular — delivering scalable, component-driven UIs — combined with solid backend work in Node.js and Java/Spring Boot, and real cloud deployments on AWS. I've contributed to products in insurance, healthcare, industrial software (Siemens), and utilities. Currently available and open to new full-time opportunities across Europe.",
     tags: ['Open to Remote', 'Europe-based', 'Angular First', 'Full Stack', 'Enterprise Apps'],
     highlights: [
       { value: '7+', label: 'Years of Experience' },
@@ -40,9 +40,9 @@ export const en = {
       {
         role: 'Full Stack Developer',
         highlights: [
-          'Building a water service payment management system for Castle Water',
+          'Built a water service payment management system for Castle Water',
           'Angular component-based frontend focused on maintainability and responsive UX',
-          'RESTful API development and SQL stored procedures for CRUD operations',
+          'Developed RESTful APIs and SQL stored procedures for CRUD operations',
           'End-to-end delivery of features aligned with business requirements',
         ],
       },

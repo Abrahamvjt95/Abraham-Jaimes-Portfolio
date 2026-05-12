@@ -18,7 +18,7 @@ export const it = {
     label: 'Chi sono',
     heading: 'La mia storia',
     paragraph:
-      'Sviluppatore Full Stack con oltre 7 anni di esperienza nella costruzione di applicazioni enterprise su tutto lo stack. La mia competenza principale è Angular — sviluppando interfacce scalabili e basate su componenti — combinata con solido lavoro backend in Node.js e Java/Spring Boot, e deployment reali su AWS. Ho contribuito a prodotti nel settore assicurativo, sanitario, software industriale (Siemens) e utilities. Attualmente in CGI a Lisbona, aperto a nuove opportunità in Europa.',
+      'Sviluppatore Full Stack con oltre 7 anni di esperienza nella costruzione di applicazioni enterprise su tutto lo stack. La mia competenza principale è Angular — sviluppando interfacce scalabili e basate su componenti — combinata con solido lavoro backend in Node.js e Java/Spring Boot, e deployment reali su AWS. Ho contribuito a prodotti nel settore assicurativo, sanitario, software industriale (Siemens) e utilities. Attualmente disponibile e aperto a nuove opportunità a tempo pieno in Europa.',
     tags: ['Disponibile Remoto', 'Basato in Europa', 'Angular First', 'Full Stack', 'App Enterprise'],
     highlights: [
       { value: '7+', label: 'Anni di Esperienza' },

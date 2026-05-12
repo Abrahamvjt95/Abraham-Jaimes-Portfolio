@@ -18,7 +18,7 @@ export const pt = {
     label: 'Sobre mim',
     heading: 'Quem sou',
     paragraph:
-      'Desenvolvedor Full Stack com mais de 7 anos de experiência a construir aplicações empresariais em todo o stack. A minha especialidade principal é Angular — entregando interfaces escaláveis e baseadas em componentes — combinada com sólido trabalho de backend em Node.js e Java/Spring Boot, e deploys reais em AWS. Contribuí para produtos em seguros, saúde, software industrial (Siemens) e utilities. Atualmente na CGI em Lisboa, disponível para novas oportunidades na Europa.',
+      'Desenvolvedor Full Stack com mais de 7 anos de experiência a construir aplicações empresariais em todo o stack. A minha especialidade principal é Angular — entregando interfaces escaláveis e baseadas em componentes — combinada com sólido trabalho de backend em Node.js e Java/Spring Boot, e deploys reais em AWS. Contribuí para produtos em seguros, saúde, software industrial (Siemens) e utilities. Atualmente disponível e aberto a novas oportunidades a tempo inteiro na Europa.',
     tags: ['Disponível Remoto', 'Baseado na Europa', 'Angular First', 'Full Stack', 'Apps Enterprise'],
     highlights: [
       { value: '7+', label: 'Anos de Experiência' },
@@ -40,9 +40,9 @@ export const pt = {
       {
         role: 'Full Stack Developer',
         highlights: [
-          'Desenvolvimento de um sistema de gestão de pagamentos de serviços de água para Castle Water',
+          'Desenvolvi um sistema de gestão de pagamentos de serviços de água para Castle Water',
           'Frontend Angular baseado em componentes com foco em manutenibilidade e UX responsiva',
-          'Desenvolvimento de APIs RESTful e stored procedures SQL para operações CRUD',
+          'Desenvolvi APIs RESTful e stored procedures SQL para operações CRUD',
           'Entrega end-to-end de funcionalidades alinhadas com os requisitos de negócio',
         ],
       },

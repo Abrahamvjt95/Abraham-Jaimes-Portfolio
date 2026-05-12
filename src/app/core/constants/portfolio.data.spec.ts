@@ -128,13 +128,9 @@ describe('Portfolio data integrity', () => {
       });
     });
 
-    it('first entry is the current job', () => {
-      expect(EXPERIENCE_STRUCTURE[0].current).toBe(true);
-    });
-
-    it('only first entry has the current flag', () => {
-      EXPERIENCE_STRUCTURE.slice(1).forEach((exp, i) => {
-        expect((exp as { current?: boolean }).current, `exp[${i + 1}] should not be current`).toBeFalsy();
+    it('no entry is marked as current (available for hire)', () => {
+      EXPERIENCE_STRUCTURE.forEach((exp, i) => {
+        expect((exp as { current?: boolean }).current, `exp[${i}] should not be current`).toBeFalsy();
       });
     });
 

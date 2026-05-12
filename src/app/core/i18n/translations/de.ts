@@ -18,7 +18,7 @@ export const de = {
     label: 'Über mich',
     heading: 'Wer ich bin',
     paragraph:
-      'Full Stack Entwickler mit über 7 Jahren Erfahrung in der Entwicklung unternehmensweiter Anwendungen. Meine Kernkompetenz ist Angular — skalierbare, komponentenbasierte Benutzeroberflächen — kombiniert mit solider Backend-Arbeit in Node.js und Java/Spring Boot sowie echten Cloud-Deployments auf AWS. Ich habe zu Produkten in den Bereichen Versicherungen, Gesundheitswesen, Industriesoftware (Siemens) und Versorgungsunternehmen beigetragen. Derzeit bei CGI in Lissabon, offen für neue Möglichkeiten in Europa.',
+      'Full Stack Entwickler mit über 7 Jahren Erfahrung in der Entwicklung unternehmensweiter Anwendungen. Meine Kernkompetenz ist Angular — skalierbare, komponentenbasierte Benutzeroberflächen — kombiniert mit solider Backend-Arbeit in Node.js und Java/Spring Boot sowie echten Cloud-Deployments auf AWS. Ich habe zu Produkten in den Bereichen Versicherungen, Gesundheitswesen, Industriesoftware (Siemens) und Versorgungsunternehmen beigetragen. Derzeit verfügbar und offen für neue Vollzeitstellen in Europa.',
     tags: ['Remote verfügbar', 'Europa-basiert', 'Angular First', 'Full Stack', 'Enterprise Apps'],
     highlights: [
       { value: '7+', label: 'Jahre Erfahrung' },

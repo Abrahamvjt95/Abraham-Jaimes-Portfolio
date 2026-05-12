@@ -15,12 +15,11 @@ export const SKILLS_STRUCTURE = [
   { icon: '◎', skills: ['Git', 'GitHub', 'GitLab', 'Agile / Scrum', 'IntelliJ IDEA', 'VS Code', 'WebStorm'] },
 ];
 
-export const EXPERIENCE_STRUCTURE = [
+export const EXPERIENCE_STRUCTURE: { company: string; period: string; location: string; stack: string[]; current?: boolean }[] = [
   {
     company: 'CGI',
-    period: 'Aug 2025 – Present',
+    period: 'Aug 2025 – Apr 2026',
     location: 'Lisbon, Portugal',
-    current: true,
     stack: ['Angular', 'TypeScript', 'SQL', 'RESTful APIs'],
   },
   {
