@@ -18,6 +18,7 @@ export class ProjectsComponent {
   projects = computed(() =>
     PROJECTS_STRUCTURE.map((item, i) => ({
       ...item,
+      status: item.status as ProjectStatus,
       ...this.i18n.t().projects.items[i],
     }))
   );
