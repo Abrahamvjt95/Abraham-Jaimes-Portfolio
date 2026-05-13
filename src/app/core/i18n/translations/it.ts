@@ -103,9 +103,9 @@ export const it = {
           'API REST per il tracciamento di issue sviluppata con Node.js, Express e MongoDB. Autenticazione JWT, controllo degli accessi basato su ruoli, CRUD completo per progetti e ticket e suite di test con Jest e Supertest. Deployed su Railway.',
       },
       {
-        title: 'Lambda Search Service',
+        title: 'JobLens',
         description:
-          'Servizio di ricerca documenti serverless su AWS. Funzioni Lambda in Python dietro API Gateway indicizzano file caricati su S3 in Amazon OpenSearch. Frontend Angular per ricerca full-text in tempo reale con filtri.',
+          'Motore di ricerca offerte tech serverless su AWS. Una pipeline ETL Lambda giornaliera estrae offerte da 4 API reali (Adzuna, TheMuse, Remotive, Arbeitnow), le normalizza in S3 e le indicizza in OpenSearch. Frontend Angular 21 con Signals, autocomplete e filtri a faccette. Oltre 993 offerte reali.',
       },
     ],
   },

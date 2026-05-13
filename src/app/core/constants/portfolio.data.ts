@@ -56,8 +56,11 @@ export const PROJECTS_STRUCTURE = [
     status: 'in-progress' as const,
   },
   {
-    stack: ['Angular', 'AWS Lambda', 'API Gateway', 'S3', 'OpenSearch', 'Python'],
-    status: 'in-progress' as const,
+    stack: ['Angular 21', 'Python', 'AWS Lambda', 'OpenSearch', 'S3', 'API Gateway', 'SAM', 'EventBridge'],
+    status: 'live' as const,
+    featured: true,
+    demoUrl: 'https://joblens-frontend-psi.vercel.app',
+    githubUrl: 'https://github.com/Abrahamvjt95/joblens-api',
   },
 ];
 

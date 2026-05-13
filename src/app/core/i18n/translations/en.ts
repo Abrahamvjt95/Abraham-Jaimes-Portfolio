@@ -103,9 +103,9 @@ export const en = {
           'RESTful issue-tracking API built with Node.js, Express and MongoDB. JWT authentication, role-based access control, full CRUD for projects and tickets, and a test suite with Jest and Supertest. Deployed on Railway.',
       },
       {
-        title: 'Lambda Search Service',
+        title: 'JobLens',
         description:
-          'Serverless document search service on AWS. Python Lambda functions behind API Gateway index files uploaded to S3 into Amazon OpenSearch. Angular frontend for real-time full-text search and filtering.',
+          'Serverless tech job search engine on AWS. A daily Lambda ETL pipeline pulls listings from 4 real APIs (Adzuna, TheMuse, Remotive, Arbeitnow), normalises them into S3, and bulk-indexes into OpenSearch. Angular 21 frontend with Signals, autocomplete, and faceted filters. 993+ live listings.',
       },
     ],
   },
